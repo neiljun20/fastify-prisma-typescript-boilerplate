@@ -33,7 +33,7 @@ export default class Server{
 	private userRoute = new UserRoute();
 	private productRoute = new ProductRoute();
 
-	 public constructor (){
+	public constructor (){
 
 		this.server.register(require('@fastify/cors'), () => {
 			return (req, callback) => {
