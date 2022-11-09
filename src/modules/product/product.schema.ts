@@ -13,9 +13,9 @@ const productGenerated = {
 	updatedAt: z.string(),
 };
 
-const createProductSchema 		= z.object({ ...productInput });
-const productResponseSchema 	= z.object({ ...productInput, ...productGenerated });
-const productsResponseSchema 	= z.array(productResponseSchema);
+const createProductSchema = z.object({ ...productInput });
+const productResponseSchema = z.object({ ...productInput, ...productGenerated });
+const productsResponseSchema = z.array(productResponseSchema);
 
 export type CreateProductInput = z.infer<typeof createProductSchema>;
 
