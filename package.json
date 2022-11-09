@@ -1,0 +1,30 @@
+{
+  "name": "my-fastify-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Neiljun Cataag",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build && node dist/app.js",
+    "dev": "tsnd --respawn --transpile-only --exit-child src/app.ts",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^6.3.2",
+    "@prisma/client": "^4.5.0",
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.9.2",
+    "fastify-zod": "^1.2.0",
+    "zod": "^3.19.1",
+    "zod-to-json-schema": "^3.18.1"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/node": "^18.11.9",
+    "prisma": "^4.6.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
+}
