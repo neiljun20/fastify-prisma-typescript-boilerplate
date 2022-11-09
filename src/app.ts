@@ -3,7 +3,7 @@ import { PORT } from './config';
 
 const main = async () =>  {
 	const server = new Server().build();
-	await server.listen({ port: 3000 });
+	await server.listen({ port: Number(PORT) });
 	console.log(`Server ready at http://localhost:${PORT}`);
 }
 
