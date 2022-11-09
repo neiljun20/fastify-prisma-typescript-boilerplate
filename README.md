@@ -1,1 +1,1 @@
-This is a OOP RESTful API boilerplate using fastify, jwt, prisma, and typescript.
+This is a OOP RESTful API boilerplate using Fastify, JWT, Prisma, and Typescript.
