@@ -60,8 +60,8 @@ export default class Server{
 			staticCSP: true,
 			openapi: {
 				info: {
-					title: "Fastify API",
-					description: "API for some products",
+					title: "Fastify Prisma Typescript Boilerplate",
+					description: "This is a OOP RESTful API boilerplate using Fastify, JWT, Prisma, and Typescript.",
 					version: "1.0.0"
 				}
 			}
