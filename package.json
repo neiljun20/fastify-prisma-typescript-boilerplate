@@ -9,10 +9,11 @@
     "dev": "tsnd --respawn --transpile-only --exit-child src/app.ts",
     "prebuild": "rimraf rm -rf ./dist",
     "build": "tsc --build",
-    "prisma:postgresql": "rimraf rm -rf ./prisma && prisma init --datasource-provider postgresql",
-    "prisma:mysql": "rimraf rm -rf ./prisma && prisma init --datasource-provider mysql",
-    "prisma:sqlite": "rimraf rm -rf ./prisma && prisma init --datasource-provider sqlite",
-    "prisma:mongodb": "rimraf rm -rf ./prisma && prisma init --datasource-provider mongodb",
+    "prisma:delete": "rimraf rm -rf ./prisma",
+    "prisma:postgresql": "npm run prisma:delete && prisma init --datasource-provider postgresql",
+    "prisma:mysql": "npm run prisma:delete && prisma init --datasource-provider mysql",
+    "prisma:sqlite": "npm run prisma:delete && prisma init --datasource-provider sqlite",
+    "prisma:mongodb": "npm run prisma:delete && prisma init --datasource-provider mongodb",
     "prisma:migrate": "prisma migrate dev --name init"
   },
   "dependencies": {
